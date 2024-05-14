@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+:root {
+    --colorputih: #F6F5F2;
+    --colorbiru: #CDE8E5; /*5AB2FF*/
+    --colorhitam: #151515;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Mono', sans-serif;
+}
+
+body {
+    background: url(bgcopy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact {
+    width: 60%;
+    padding: 1.5rem;
+
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    flex-direction: column;
+    /* border: 2px solid var(--colorputih); */
+    border-radius: 20px;
+}
+
+#contact-judul {
+    font-weight: 800;
+    color: var(--colorputih);
+}
+
+form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+#name, #email {
+    width: 100%;
+    height: 38px;
+
+    padding-inline: 0.6rem;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--colorhitam);
+    border: 2px solid var(--colorbiru);
+    border-radius: 30px;
+    outline: none;
+}
+
+#name:focus, 
+#email:focus,
+#message:focus {
+    transform: scale(1.02);
+}
+
+#message {
+    width: 100%;
+
+    padding-inline: 0.6rem;
+    font-size: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--colorhitam);
+    border: 2px solid var(--colorbiru);
+    border-radius: 15px;
+    outline: none;
+}
+
+.contact-button {
+    width: 100%;
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;    
+}
+
+.contact-button:hover {
+    background-color: var(--colorbiru);
+    transform: scale(1.02);
+}

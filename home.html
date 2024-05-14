@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Faisal | Login & Send Message</title>
+    <link href="stylee.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="contact">
+            <h1 id="contact-judul">contact us</h1>
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="940067d8-fc67-401f-8551-c621ec84f050">
+                <div class="form">
+                    <input type="text" id="name" placeholder="Name" name="name..." required>
+                </div>
+                <div class="form">
+                    <input type="email" id="email" placeholder="Email" name="email..." required>
+                </div>
+                <div class="form">
+                    <textarea id="message" placeholder="Message" name="message..." cols="30" rows="10"></textarea>
+                </div>
+                <button class="contact-button">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

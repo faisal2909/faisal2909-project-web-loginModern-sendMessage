@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+:root {
+    --colorputih: #F6F5F2;
+    --colorbiru: #CDE8E5; /*5AB2FF*/
+    --colorhitam: #151515;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans Mono', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    background: url(bgcopy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: var(--colorputih);
+    font-weight: 400;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: var(--colorbiru);
+    font-weight: 800;
+}
+
+.wrapper {
+    background-color: rgb(127, 255, 212, 0.2);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-login {
+    position: relative;
+    width: 500px;
+    height: 100%;
+    padding: 4rem 3rem 2rem;
+    border: 2px solid var(--colorputih);
+    border-radius: 20px;
+    color: var(--colorputih);
+    backdrop-filter: blur(25px);
+}
+
+h2 {
+    position: absolute;
+    top: 10px;
+    left: 40%;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+.input_box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.input_failed {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 400;
+    padding-inline: 1rem 2.5rem ;
+    background-color: transparent;
+    border: 2px solid var(--colorputih);
+    border-radius: 30px;
+    color: var(--colorputih);
+    outline: none;
+}
+
+.input_failed:focus ~ .icon {
+    position: absolute;
+    right: 15px;
+}
+
+.input_failed:focus {
+    transform: scale(1.02);
+}
+
+.input_failed::placeholder {
+    color: var(--colorputih);
+    opacity: .7;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.icon {
+    font-size: 20px;
+    position: absolute;
+    top: 9px;
+    right: 18px;
+}
+
+.login_remember_forget {
+    display: flex;
+    justify-content: space-between;
+}
+
+.login_remember_forget .remember {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* .contact-button {
+    width: 100%;
+    padding: 5px;
+    border-radius: 30px;
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.contact-button:hover {
+    background-color: var(--colorbiru);
+    transform: scale(1.02);
+    font-size: 16px;
+    font-weight: 600;
+} */
+
+.button_login {
+    width: 100%;
+    padding: 5px;
+    border-radius: 30px;
+    background-color: white;
+    color: var(--colorhitam);
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    text-align: center;
+}
+
+.button_login:hover {
+    background-color: var(--colorbiru);
+    transform: scale(1.02);
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--colorhitam);
+    text-decoration: none;
+}
+
+.login_register {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 720px) {
+    .box-login {
+        padding: 4rem 2rem 2rem;
+    }
+}
